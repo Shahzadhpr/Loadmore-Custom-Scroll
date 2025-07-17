@@ -99,6 +99,7 @@ body{
 	font-size: 1.6rem;
 	color: var(--text-color);
 	margin-top: 8rem;
+	margin-bottom: 15rem;
 }
 
 svg{
@@ -141,6 +142,7 @@ button{
 	border-radius: 1.6rem;
 	padding: 2.4rem 2.4rem 3.8rem 2.4rem;
 	position: relative;
+	transition: all 150ms ease-in;
 
 }
 
@@ -179,10 +181,41 @@ button{
     margin: 0 auto;
 }
 
-.con-add{
-
+.content__close__text{
+	display: none;
 }
 
 .icon-minus{
 	display: none;
+}
+
+.content--open .content__text{
+	height: auto;
+	overflow: visible;
+}
+
+.content--open .content__shadow{
+	display: none;
+}
+
+.content--open .icon-add{
+	display: none;
+}
+
+.content--open .icon-minus{
+	display: block;
+}
+
+.content--open .content__close__text{
+	display: block;
+}
+
+.content--open .content__open__text{
+	display: none;
+}
+
+.content--open .content__btn{
+	background-color: white;
+	color: var(--primery-color);
+	border: 1px solid var(--primery-color);
 }
