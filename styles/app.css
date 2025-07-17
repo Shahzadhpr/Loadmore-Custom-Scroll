@@ -74,6 +74,27 @@ table {
 
 /*
 =============
+  Scrollbar
+=============
+*/
+/* width */
+.content__text::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.content__text::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.content__text::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+  border-radius: 50px;
+}
+
+/*
+=============
   Styles Css
 =============
 */
@@ -98,8 +119,7 @@ body{
     font-family: "YekanBakh Regular", sans-serif;
 	font-size: 1.6rem;
 	color: var(--text-color);
-	margin-top: 8rem;
-	margin-bottom: 15rem;
+	margin-top: 6rem;
 }
 
 svg{
@@ -140,7 +160,7 @@ button{
 .content{
 	background-color: #F5F5F5;
 	border-radius: 1.6rem;
-	padding: 2.4rem 2.4rem 3.8rem 2.4rem;
+	padding: 2.4rem .8rem 3.8rem 2.4rem;
 	position: relative;
 	transition: all 150ms ease-in;
 
@@ -149,6 +169,9 @@ button{
 .content__text{
 	height: 28.8rem;
 	overflow: hidden;
+	direction: ltr;
+	text-align: right;
+	padding-right: .8rem;
 }
 
 .content__shadow{
@@ -190,8 +213,10 @@ button{
 }
 
 .content--open .content__text{
-	height: auto;
-	overflow: visible;
+	/* height: auto; */
+	/* overflow: visible; */
+	height: 50rem;
+	overflow-y: scroll;
 }
 
 .content--open .content__shadow{
