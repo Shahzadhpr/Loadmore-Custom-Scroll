@@ -77,25 +77,77 @@ table {
   Styles Css
 =============
 */
-:root {
+:root{
 	--text-color: #1D2939;
 	--primery-color: #EB5E28;
 	--secondery-color: #F5F5F5;
 }
 
-html {
+html{
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	font-size: 10px;
 }
 
-*, *:before, *:after {
+*, *:before, *:after{
 	-webkit-box-sizing: inherit;
 	        box-sizing: inherit;
 }
 
-body {
-    font-family: "YekanBakh Medium", sans-serif;
+body{
+    font-family: "YekanBakh Regular", sans-serif;
 	font-size: 1.6rem;
 	color: var(--text-color);
+	margin-top: 8rem;
+}
+
+svg{
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+.loadmore{
+	width: 100.8rem;
+	margin: 0 auto;
+}
+
+.loadmore__header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: .8rem;
+	margin-bottom: 3.2rem;
+}
+
+.loadmore__title{
+	font-family: "YekanBakh Heavy";
+	font-size: 3rem;
+}
+
+.loadmore__img{
+	width: 13rem;
+	height: 2rem;
+}
+
+.content{
+	background-color: #F5F5F5;
+	border-radius: 1.6rem;
+	padding: 2.4rem;
+}
+
+.content__text{
+
+}
+
+.content__shadow{
+
+}
+
+.content__btn{
+
+}
+
+.content__btn__text{
+
 }
