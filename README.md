@@ -4,6 +4,15 @@ A simple and elegant "Load More / Show Less" feature with custom scrollbar styli
 
 <br>
 
+### 🖥️ **View**
+
+<p align="center">
+  <img src="images/ViewProject/View1.png" width="1500"/>
+  <img src="images/ViewProject/View2.png" width="1500"/>
+</p>
+
+<br>
+
 ## 🛠️ Technologies Used
 
 - HTML5 + CSS3
